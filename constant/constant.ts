@@ -34,6 +34,6 @@ export const NavLINKS = [
     {
         id: 7,
         url: "#",
-        lable: "Contact",
+        lable: "Contact Us",
     },
 ]

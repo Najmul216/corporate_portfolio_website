@@ -2,6 +2,7 @@ import Logo from "@/components/Helper/Logo";
 import { NavLINKS } from "@/constant/constant";
 import Link from "next/link";
 import React from "react";
+import { HiBars3BottomRight } from "react-icons/hi2";
 
 const Nav = () => {
   return (
@@ -10,7 +11,7 @@ const Nav = () => {
         {/* Logo Section */}
         <Logo />
         {/* Nav links for large screens */}
-        <div className="hidden lg:flex bg-white rounded-full h-[10vh] md:p-4 items-center space-x-10">
+        <div className="hidden lg:flex bg-white rounded-full h-[8vh] md:p-4 items-center space-x-10">
           {NavLINKS.map((link) => (
             <Link
               key={link.id}
@@ -20,7 +21,11 @@ const Nav = () => {
               <p>{link.lable}</p>
             </Link>
           ))}
-          {/* <button>Create Account</button> */}
+          {/* <button className="h-full bg-[#b69974] cursor-pointer text-white p-3 font-bold">Create Account</button> */}
+        </div>
+        {/* Hamburger Menu for small screens */}
+        <div className="lg:hidden">
+          <HiBars3BottomRight className="w-9 h-9 cursor-pointer text-green-400" />
         </div>
       </div>
     </div>

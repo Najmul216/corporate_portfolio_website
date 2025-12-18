@@ -19,12 +19,12 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
       ></div>
       {/* Navlinks */}
       <div
-        className={`text-white ${navOpenStyles} top-0 fixed justify-center flex flex-col h-full transform transition-all duration-500 
-      delay-300 w-[80%] sm:w-[60%] bg-[#b79b76] space-y-6 z-1050`}
+        className={`text-black ${navOpenStyles} top-0 fixed justify-center flex flex-col h-full transform transition-all duration-500 
+      delay-300 w-[80%] sm:w-[60%] bg-gray-100 space-y-6 z-1050`}
       >
         {NavLINKS.map((link) => (
           <Link key={link.id} href={link.url}>
-            <p className="text-white w-fit text-[20px] ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px]">
+            <p className="text-black hover:text-green-400 w-fit text-[20px] ml-12 border-b-[2.5px] pb-1 border-black hover:border-green-400 sm:text-[30px]">
               {link.lable}
             </p>
           </Link>

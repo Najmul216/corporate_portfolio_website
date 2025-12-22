@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import AboutProgress from "./AboutProgress";
 
 const AboutPage = () => {
   return (
@@ -22,12 +23,12 @@ const AboutPage = () => {
             width={300}
             height={300}
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-            rounded-lg md:ml-4 w-[200px] h-[200px] md:h-[300px] md:w-[300px]"
+            rounded-lg md:ml-4 w-50 h-50 md:h-75 md:w-75"
           />
         </div>
         {/* Text content*/}
         <div className="order-1 lg:order-2">
-          <h1 className="text-2xl uppercase md:text-3xl lg:text-3xl font-bold text-black mb-4 tracking-widest">
+          <h1 className="text-2xl uppercase md:text-3xl lg:text-3xl font-bold text-black mb-2 tracking-widest">
             About Us
           </h1>
           <div className="w-20 h-1 bg-green-400"></div>
@@ -59,6 +60,7 @@ const AboutPage = () => {
               the near future in international level.
             </p>
           </div>
+          <AboutProgress />
         </div>
       </div>
     </div>

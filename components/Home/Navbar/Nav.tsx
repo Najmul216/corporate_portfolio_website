@@ -10,29 +10,49 @@ type Props = {
 
 const Nav = ({ openNav }: Props) => {
   return (
-    <div className="h-[12vh] relative z-10 lg:mt-8">
-      <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
-        {/* Logo Section */}
-        <Logo />
-        {/* Nav links for large screens */}
-        <div className="hidden lg:flex bg-white rounded-full h-[8vh] md:p-4 items-center space-x-10">
-          {NavLINKS.map((link) => (
-            <Link
-              key={link.id}
-              href={link.url}
-              className="text-black hover:text-green-500 font-semibold transition-all duration-300"
-            >
-              <p>{link.lable}</p>
+    <nav className="w-full bg-white shadow-sm fixed pt-1 pb-1 top-0 z-40">
+      <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-2">
+        <div className="flex items-center justify-between h-18 md:h-20">
+          {/* Logo Section */}
+          <div className="shrink-0">
+            <Link href="/">
+              <Logo />
             </Link>
-          ))}
-          {/* <button className="h-full bg-[#b69974] cursor-pointer text-white p-3 font-bold">Create Account</button> */}
-        </div>
-        {/* Hamburger Menu for small screens */}
-        <div onClick={openNav} className="lg:hidden">
-          <HiBars3BottomRight className="w-9 h-9 cursor-pointer text-green-400" />
+          </div>
+
+          {/* Nav links for large screens */}
+          <div className="hidden lg:flex items-center space-x-8">
+            {NavLINKS.map((link) => (
+              <Link
+                key={link.id}
+                href={link.url}
+                className="text-black hover:text-green-600 font-bold text-lg transition-colors duration-300 relative group"
+              >
+                {link.lable}
+                <span className="absolute bottom-0 left-0 w-0 h-1 bg-green-600 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+            ))}
+          </div>
+
+          {/* Contact Button for large screens */}
+          <div className="hidden lg:flex items-center">
+            <button className="bg-green-400 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition-colors duration-300">
+              Contact Us
+            </button>
+          </div>
+
+          {/* Hamburger Menu for small screens */}
+          <div className="lg:hidden">
+            <button
+              onClick={openNav}
+              className="inline-flex items-center justify-center p-2 rounded-md text-green-500 hover:text-green-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500 transition-colors duration-300"
+            >
+              <HiBars3BottomRight className="w-7 h-7" />
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -23,7 +23,7 @@ const AboutProgress = () => {
       {data.map((item, idx) => (
         <div
           key={item.id}
-          className="flex items-center gap-6 bg-white rounded-xl shadow-md p-6"
+          className="flex items-center gap-6 bg-gray-100 rounded-xl shadow-md p-6"
         >
           {/* Icon Section */}
           <div className="bg-green-400 p-5 rounded-md flex items-center justify-center">

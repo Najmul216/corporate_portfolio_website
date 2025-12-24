@@ -10,7 +10,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="w-full bg-[#041b3c] py-8 md:py-16 lg:py-24">
+    <div className="w-full bg-[#041b3c] py-8 mt-26 md:mt-36 md:py-16 lg:py-24">
       <div className="w-[90%] md:w-[95%] max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Right Side - Image */}
@@ -31,7 +31,7 @@ const Hero = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
                 WELCOME TO FCCL
               </h1>
-              <div className="w-20 h-1 bg-green-400"></div>
+              <div className="w-24 h-1 bg-green-400"></div>
             </div>
 
             {/* Description */}
@@ -54,12 +54,20 @@ const Hero = () => {
             </ul>
 
             {/* Button */}
-            <button
-              className="bg-green-400 hover:bg-green-700 text-white font-semibold py-3 px-8 cursor-pointer 
+            <div className="flex justify-center lg:justify-start">
+              <button
+                className="bg-green-300 hover:bg-green-500 font-semibold transition-colors duration-300 text-gray-900 py-3 px-8 
+              rounded text-base sm:text-lg shadow-md hover:shadow-lg cursor-pointer sm:cursor-pointer"
+              >
+                GET IN TOUCH
+              </button>
+            </div>
+            {/* <button
+              className=" hover:bg-green-700 text-white font-semibold py-2 px-5 cursor-pointer 
             rounded-full transition-all duration-300 outline-2"
             >
               GET IN TOUCH
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

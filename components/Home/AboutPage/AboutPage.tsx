@@ -28,10 +28,18 @@ const AboutPage = () => {
         </div>
         {/* Text content*/}
         <div className="order-1 lg:order-2">
-          <h1 className="text-2xl uppercase md:text-3xl lg:text-3xl font-bold text-black mb-2 tracking-widest">
+          {/* <h1 className="text-2xl uppercase md:text-3xl lg:text-3xl font-bold text-black mb-2 tracking-widest">
             About Us
           </h1>
-          <div className="w-20 h-1 bg-green-400"></div>
+          <div className="w-20 h-1 bg-green-400"></div> */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              ABOUT US
+            </h2>
+            <div className="flex justify-center mb-6">
+              <div className="w-18 h-1 bg-green-400 rounded"></div>
+            </div>
+          </div>
 
           {/* Main heading */}
           {/* <h1 className="text-xl md:text-4xl font-semibold mt-4 text-black">

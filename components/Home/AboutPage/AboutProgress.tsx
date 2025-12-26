@@ -19,7 +19,7 @@ const AboutProgress = () => {
   ];
 
   return (
-    <div className="text-black space-y-8 py-6 md:py-10">
+    <div className="text-black w-[95%] space-y-6 py-4 md:py-6">
       {data.map((item) => (
         <div
           key={item.id}

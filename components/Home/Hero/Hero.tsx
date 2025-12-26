@@ -62,12 +62,6 @@ const Hero = () => {
                 GET IN TOUCH
               </button>
             </div>
-            {/* <button
-              className=" hover:bg-green-700 text-white font-semibold py-2 px-5 cursor-pointer 
-            rounded-full transition-all duration-300 outline-2"
-            >
-              GET IN TOUCH
-            </button> */}
           </div>
         </div>
       </div>

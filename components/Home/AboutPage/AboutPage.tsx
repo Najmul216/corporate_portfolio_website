@@ -45,7 +45,7 @@ const AboutPage = () => {
           {/* <h1 className="text-xl md:text-4xl font-semibold mt-4 text-black">
             Innovative solutions for your success
           </h1> */}
-          <div className="text-black mt-4 mb-4">
+          <div className="text-black w-[95%] mt-4 mb-4">
             <p className="mb-3 text-body text-justify">
               <strong className="font-semibold text-heading">
                 Fortex Contracting Company Ltd.

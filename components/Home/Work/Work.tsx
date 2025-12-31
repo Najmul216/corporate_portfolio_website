@@ -12,14 +12,17 @@ const Work = () => {
   return (
     <section className="relative">
       {/* Stats card */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-12 w-[90%] md:w-3/4 lg:w-3/5 z-20">
-        <div className="bg-gray-700 backdrop-blur-md rounded-2xl shadow-2xl py-8 px-6 md:px-12 flex justify-between items-center gap-6">
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-12 w-[95%] md:w-3/4 lg:w-3/5 z-20">
+        <div className="bg-gray-500 backdrop-blur-md rounded-2xl shadow-2xl py-8 px-4 md:px-12 flex justify-between items-center gap-6">
           {stats.map((st) => (
-            <div key={st.label} className="text-center flex-1">
-              <div className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-green-400">
+            <div
+              key={st.label}
+              className="text-center flex-1 text-sm md:text-lg"
+            >
+              <div className="text-lg md:text-4xl lg:text-5xl font-bold text-green-400">
                 {st.value}
               </div>
-              <div className="text-md md:text-lg text-white font-semibold mt-2">
+              <div className="text-sm md:text-lg text-white font-semibold mt-2">
                 {st.label}
               </div>
             </div>
@@ -30,10 +33,10 @@ const Work = () => {
       {/* Hero */}
       <div className="relative h-130 md:h-155 lg:h-207.5 w-full">
         <Image
-          src="/images/b2.png"
+          src="/images/1a.jpg"
           alt="construction team"
           fill
-          className="object-cover"
+          className="object-cover brightness-75"
           priority
         />
 
@@ -55,11 +58,11 @@ const Work = () => {
               </div>
             </div>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mt-12 leading-tight">
               Innovative Solutions For Large Scale Infrastructure.
             </h1>
 
-            <p className="mt-12 text-black hidden font-semibold text-xl md:block">
+            <p className="mt-12 text-white hidden font-semibold text-xl md:block">
               We deliver reliable, efficient and safe infrastructure projects
               with a commitment to quality and client satisfaction.
             </p>

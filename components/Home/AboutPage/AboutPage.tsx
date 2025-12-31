@@ -5,7 +5,7 @@ import AboutProgress from "./AboutProgress";
 const AboutPage = () => {
   return (
     <div className="pt-16 pb-16 bg-white">
-      <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="w-[92%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Image Content */}
         <div className="relative flex justify-center items-center order-2 lg:order-1">
           {/* Image section*/}
@@ -32,11 +32,11 @@ const AboutPage = () => {
             About Us
           </h1>
           <div className="w-20 h-1 bg-green-400"></div> */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl text-center mr-32 lg:text-5xl font-bold text-gray-900 mb-4">
+          <div className="text-center md:mb-12">
+            <h2 className="text-3xl sm:text-4xl text-center md:mr-32 lg:text-5xl font-bold text-gray-900 mb-4">
               ABOUT US
             </h2>
-            <div className="flex justify-center mb-6 mr-30">
+            <div className="flex justify-center mb-6 md:mr-30">
               <div className="w-18 h-1 bg-green-400 rounded"></div>
             </div>
           </div>
@@ -45,7 +45,7 @@ const AboutPage = () => {
           {/* <h1 className="text-xl md:text-4xl font-semibold mt-4 text-black">
             Innovative solutions for your success
           </h1> */}
-          <div className="text-black w-[82%] mt-4 mb-4">
+          <div className="text-black md:w-[82%] mt-4 mb-4">
             <p className="mb-3 text-body text-justify">
               <strong className="font-semibold text-heading">
                 Fortex Contracting Company Ltd.

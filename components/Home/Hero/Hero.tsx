@@ -55,12 +55,15 @@ const Hero = () => {
 
             {/* Button */}
             <div className="flex justify-center lg:justify-start">
-              <button
+              <button className="bg-linear-to-b from-green-400 to-yellow-300 hover:bg-linear-to-b hover:from-green-500 hover:to-green-300 text-black cursor-pointer font-semibold px-4 py-2 rounded-full">
+                GET IN TOUCH
+              </button>
+              {/* <button
                 className="bg-green-300 hover:bg-green-500 font-semibold transition-colors duration-300 text-gray-900 py-3 px-8 
               rounded text-base sm:text-lg shadow-md hover:shadow-lg cursor-pointer sm:cursor-pointer"
               >
                 GET IN TOUCH
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

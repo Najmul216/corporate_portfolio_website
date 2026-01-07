@@ -20,66 +20,63 @@ const ContactPage: React.FC = () => {
       answer:
         "Yes, there are many other components available in this library. You can find them in the 'Components' section of the website.",
     },
-
-    {
-      question: "Are components responsive?",
-
-      answer:
-        "Yes, all components are responsive and can be used on different screen sizes.",
-    },
   ];
 
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="bg-gray-100 py-12 sm:py-12 lg:py-16">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-18 items-center">
-            {/* Left: Image */}
+      <section className="bg-gray-100 py-10 sm:py-10 lg:py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-4 items-center">
+            {/* Left: Content */}
             <div className="order-1 lg:order-1">
-              <p className="text-green-600 text-md sm:text-2xl font-bold tracking-widest mb-3">
+              <p className="text-green-600 text-xl sm:text-3xl font-bold tracking-widest mb-3">
                 Who we are ?
               </p>
-              <div className="flex justify-start mb-2">
+              <div className="flex justify-start mb-3">
                 <div className="w-20 h-1 bg-green-400 rounded"></div>
               </div>
-              <h1 className="text-3xl sm:text-3xl lg:text-3xl font-bold text-gray-900 leading-tight mb-2">
+              <h1 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-black leading-tight mb-3">
                 We provide high quality services -
               </h1>
 
-              <p className="text-slate-600 text-base leading-relaxed mb-2">
+              <p className="text-slate-600 text-md text-justify mb-3">
                 Sed ullamcorper dui at risus viverra, nec cursus leo
                 ullamcorper. Class aptent taciti sociosqu ad litora torquent per
                 conubia nostra, per inceptos himenaeos congue dui nec dui
                 lobortis maximus.
               </p>
 
-              <p className="text-slate-600 text-base leading-relaxed">
+              <p className="text-slate-600 text-md text-justify">
                 Curabitur pretium, libero vitae pharetra rhoncus, tellus urna
                 auctor orci, eu dictum diam diam nec neque. Pellentesque.
               </p>
             </div>
-            {/* Right: Content */}
+            {/* Right: Image */}
             <div className="flex justify-center lg:justify-end order-2 lg:order-2">
-              <div className="w-full max-w-md lg:max-w-lg">
+              <div className="lg:max-w-md max-w-md">
                 <Image
-                  src="/images/w1.jpg"
+                  src="/images/w2.avif"
                   alt="Team working on laptop"
                   width={620}
                   height={580}
-                  className="rounded-2xl object-cover shadow-lg"
+                  className="rounded-2xl object-cover shadow-xl"
                   priority
                 />
               </div>
             </div>
           </div>
+          <button className="bg-green-400 hover:bg-green-500 text-white font-semibold px-8 py-3 rounded-full flex items-center gap-2 transition-colors">
+            Contact Us
+            <span>→</span>
+          </button>
         </div>
       </section>
 
       {/* Top Authors Section */}
-      <section className="bg-gray-100 py-12 sm:py-12 lg:py-16">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <section className="bg-gray-100 py-8 sm:py-6 lg:py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1 mb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-center">
             {/* Image Section */}
             <div className="flex items-center justify-start order-2 lg:order-1">
               <div className="w-full max-w-md lg:max-w-lg">
@@ -87,7 +84,7 @@ const ContactPage: React.FC = () => {
                   src="/images/f1.jpg"
                   alt="Contact Page Image"
                   width={620}
-                  height={580}
+                  height={600}
                   className="rounded-2xl object-cover shadow-xl"
                   priority
                 />
@@ -97,7 +94,7 @@ const ContactPage: React.FC = () => {
             {/* FAQ Section */}
             <div className="order-1 lg:order-2">
               <div className="mb-4 sm:mb-4 lg:mb-4">
-                <p className="text-green-600 text-md sm:text-2xl font-bold tracking-widest mb-3">
+                <p className="text-green-600 text-md sm:text-3xl font-bold tracking-widest mb-3">
                   FAQ&apos;s
                 </p>
                 <div className="flex justify-start mb-2">
@@ -109,7 +106,7 @@ const ContactPage: React.FC = () => {
                 </h2>
               </div>
 
-              <div className="space-y-1 sm:space-y-2">
+              <div className="space-y-1 sm:space-y-1">
                 {faqs.map((faq, index) => (
                   <div
                     key={index}
@@ -125,7 +122,7 @@ const ContactPage: React.FC = () => {
                           setOpenIndex(openIndex === index ? null : index);
                         }
                       }}
-                      className="w-full flex items-center justify-between gap-2 text-start hover:text-indigo-600 transition-colors duration-200"
+                      className="w-full flex items-center justify-between gap-3 text-start hover:text-indigo-600 transition-colors duration-200"
                       aria-expanded={openIndex === index}
                     >
                       <h3 className="cursor-pointer  text-sm sm:text-md lg:text-lg font-semibold text-black flex-1">

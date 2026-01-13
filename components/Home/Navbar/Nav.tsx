@@ -10,9 +10,9 @@ type Props = {
 
 const Nav = ({ openNav }: Props) => {
   return (
-    <nav className="w-full bg-white shadow-sm fixed pt-1 pb-1 top-0 z-40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-2">
-        <div className="flex items-center justify-between h-18 md:h-20">
+    <nav className="w-full bg-white shadow-md fixed top-0 z-40">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-18 md:h-20 lg:h-20">
           {/* Logo Section */}
           <div className="shrink-0">
             <Link href="/">
@@ -21,12 +21,12 @@ const Nav = ({ openNav }: Props) => {
           </div>
 
           {/* Nav links for large screens */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {NavLINKS.map((link) => (
               <Link
                 key={link.id}
                 href={link.url}
-                className="text-black hover:text-green-600 font-bold text-lg transition-colors duration-300 relative group"
+                className="text-black hover:text-green-600 font-semibold text-sm xl:text-lg transition-colors duration-300 relative group"
               >
                 {link.lable}
                 <span className="absolute bottom-0 left-0 w-0 h-1 bg-green-600 group-hover:w-full transition-all duration-300"></span>
@@ -36,7 +36,7 @@ const Nav = ({ openNav }: Props) => {
 
           {/* Contact Button for large screens */}
           <div className="hidden lg:flex items-center">
-            <button className="bg-green-400 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition-colors duration-300">
+            <button className="bg-green-400 hover:bg-green-500 active:bg-green-600 text-white font-semibold py-2.5 px-6 xl:px-8 rounded-lg transition-colors duration-300">
               Contact Us
             </button>
           </div>
@@ -47,7 +47,7 @@ const Nav = ({ openNav }: Props) => {
               onClick={openNav}
               className="inline-flex items-center justify-center p-2 rounded-md text-green-500 hover:text-green-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500 transition-colors duration-300"
             >
-              <HiBars3BottomRight className="w-7 h-7" />
+              <HiBars3BottomRight className="w-6 h-6 sm:w-7 sm:h-7" />
             </button>
           </div>
         </div>

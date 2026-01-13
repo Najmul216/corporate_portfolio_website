@@ -6,26 +6,23 @@ import { SERVICES } from "@/constant/constant";
 
 const Services = () => {
   return (
-    <section
-      className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
-      // style={{ backgroundColor: "#36380b" }}
-    >
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-10 px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl sm:text-3xl lg:text-5xl font-bold uppercase text-white mb-4">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-8 relative overflow-hidden bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12 sm:mb-14 md:mb-16 lg:mb-20 px-2 sm:px-4">
+          <div className="mb-6 sm:mb-8 md:mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold uppercase text-black mb-4 leading-tight">
               Our Services
             </h2>
             <div className="flex justify-center mb-6">
-              <div className="w-18 h-1 bg-green-400 rounded"></div>
+              <div className="w-16 sm:w-20 md:w-24 h-1 bg-green-400 rounded"></div>
             </div>
           </div>
-          <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
+          <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-black leading-tight">
             Comprehensive Construction Services For Every Need.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8">
           {SERVICES.map((service) => (
             <article
               key={service.id}

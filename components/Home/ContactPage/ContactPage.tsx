@@ -25,7 +25,7 @@ const ContactPage: React.FC = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="bg-gray-100 py-10 sm:py-10 lg:py-10">
+      <section className="bg-gray-50 py-10 sm:py-10 lg:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-4 items-center">
             {/* Left: Content */}
@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
                   alt="Team working on laptop"
                   width={620}
                   height={580}
-                  className="rounded-2xl object-cover shadow-xl"
+                  className="rounded-2xl object-cover shadow-xl mt-4"
                   priority
                 />
               </div>
@@ -73,8 +73,8 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Top Authors Section */}
-      <section className="bg-gray-100 py-8 sm:py-6 lg:py-6">
+      {/* FAQs Section */}
+      <section className="bg-gray-50 py-8 sm:py-6 lg:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1 mb-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-center">
             {/* Image Section */}
@@ -84,7 +84,7 @@ const ContactPage: React.FC = () => {
                   src="/images/f1.jpg"
                   alt="Contact Page Image"
                   width={620}
-                  height={600}
+                  height={580}
                   className="rounded-2xl object-cover shadow-xl"
                   priority
                 />

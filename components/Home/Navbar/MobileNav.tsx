@@ -19,12 +19,11 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
       ></div>
       {/* Navlinks */}
       <div
-        className={`text-black ${navOpenStyles} top-0 fixed justify-center flex flex-col h-full transform transition-all duration-500 
-      delay-300 w-[80%] sm:w-[80%] bg-green-100 space-y-6 z-1050`}
+        className={`text-black ${navOpenStyles} top-0 fixed justify-center flex flex-col h-full transform transition-all duration-500 delay-300 w-[75%] sm:w-[70%] md:w-[60%] bg-green-100 space-y-4 sm:space-y-6 md:space-y-8 z-1050 pt-20 sm:pt-24 px-4 sm:px-8`}
       >
         {NavLINKS.map((link) => (
           <Link key={link.id} href={link.url}>
-            <p className="text-black hover:text-green-600 w-fit uppercase text-[20px] ml-12 border-b-[2.5px] pb-1 border-black hover:border-green-600 sm:text-[30px]">
+            <p className="text-black hover:text-green-600 w-fit uppercase text-base sm:text-xl md:text-2xl lg:text-3xl border-b-2 pb-2 border-black hover:border-green-600 transition-colors duration-300">
               {link.lable}
             </p>
           </Link>
@@ -32,7 +31,7 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
         {/* Close Button */}
         <CgClose
           onClick={closeNav}
-          className="absolute top-[0.7rem] right-[1.4rem] w-6 h-6 sm:w-8 sm:h-8"
+          className="absolute top-4 sm:top-6 right-4 sm:right-6 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 cursor-pointer hover:text-red-600 transition-colors"
         />
       </div>
     </div>

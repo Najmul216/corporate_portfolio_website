@@ -2,115 +2,113 @@
 
 import Image from "next/image";
 import React from "react";
+import { FaPlus } from "react-icons/fa6";
 
 const ContactPage: React.FC = () => {
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
 
   const faqs = [
     {
-      question: "How to use this component?",
-
+      question: "Lorem ipsum dolor sit amet, consectetur",
       answer:
-        "To use this component, you need to import it in your project and use it in your JSX code. Here's an example of how to use it:",
+        "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
     },
-
     {
-      question: "Are there any other components available?",
-
+      question: "Lorem ipsum dolor sit amet, consectetur",
       answer:
-        "Yes, there are many other components available in this library. You can find them in the 'Components' section of the website.",
+        "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
+    },
+    {
+      question: "Lorem ipsum dolor sit amet, consectetur",
+      answer:
+        "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
     },
   ];
 
   return (
     <div className="w-full">
-      {/* Hero Section */}
-      <section className="bg-gray-50 py-10 sm:py-10 lg:py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-4 items-center">
-            {/* Left: Content */}
-            <div className="order-1 lg:order-1">
-              <p className="text-green-600 text-xl sm:text-3xl font-bold tracking-widest mb-3">
+      {/* ============ HERO SECTION ============ */}
+      <section className="bg-white px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-12 lg:py-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center md:mr-8 md:ml-8">
+            {/* Left: Image */}
+            <div className="flex justify-center order-1 md:order-1">
+              <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl">
+                <Image
+                  src="/images/w2.avif"
+                  alt="Team working together"
+                  width={610}
+                  height={570}
+                  className="w-full h-auto rounded-2xl md:rounded-3xl object-cover shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Right: Content */}
+            <div className="order-2 md:order-2">
+              <p className="text-green-600 text-xs sm:text-sm md:text-xl font-bold tracking-widest uppercase mb-2 sm:mb-3 md:mb-4">
                 Who we are ?
               </p>
-              <div className="flex justify-start mb-3">
-                <div className="w-20 h-1 bg-green-400 rounded"></div>
-              </div>
-              <h1 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-black leading-tight mb-3">
-                We provide high quality services -
+
+              <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6 md:mb-6">
+                We provide high quality
+                <br className="hidden sm:block" />
+                Articles & blogs
               </h1>
 
-              <p className="text-slate-600 text-md text-justify mb-3">
+              <p className="text-sm sm:text-base md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-3 text-justify">
                 Sed ullamcorper dui at risus viverra, nec cursus leo
                 ullamcorper. Class aptent taciti sociosqu ad litora torquent per
                 conubia nostra, per inceptos himenaeos congue dui nec dui
                 lobortis maximus.
               </p>
 
-              <p className="text-slate-600 text-md text-justify">
+              <p className="text-sm sm:text-base md:text-base text-slate-600 leading-relaxed mb-6 sm:mb-8 text-justify">
                 Curabitur pretium, libero vitae pharetra rhoncus, tellus urna
                 auctor orci, eu dictum diam diam nec neque. Pellentesque.
               </p>
-            </div>
-            {/* Right: Image */}
-            <div className="flex justify-center lg:justify-end order-2 lg:order-2">
-              <div className="lg:max-w-md max-w-md">
-                <Image
-                  src="/images/w2.avif"
-                  alt="Team working on laptop"
-                  width={620}
-                  height={580}
-                  className="rounded-2xl object-cover shadow-xl mt-4"
-                  priority
-                />
-              </div>
+
+              <button className="w-full sm:w-auto bg-green-500 hover:bg-green-00 text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg md:rounded-xl flex items-center justify-center sm:justify-start gap-2 transition-colors duration-200">
+                Contact Us
+                <span>→</span>
+              </button>
             </div>
           </div>
-          <button className="bg-green-400 hover:bg-green-500 text-white font-semibold px-8 py-3 rounded-full flex items-center gap-2 transition-colors">
-            Contact Us
-            <span>→</span>
-          </button>
         </div>
       </section>
 
-      {/* FAQs Section */}
-      <section className="bg-gray-50 py-8 sm:py-6 lg:py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1 mb-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-center">
-            {/* Image Section */}
-            <div className="flex items-center justify-start order-2 lg:order-1">
-              <div className="w-full max-w-md lg:max-w-lg">
-                <Image
-                  src="/images/f1.jpg"
-                  alt="Contact Page Image"
-                  width={620}
-                  height={580}
-                  className="rounded-2xl object-cover shadow-xl"
-                  priority
-                />
-              </div>
-            </div>
-
-            {/* FAQ Section */}
-            <div className="order-1 lg:order-2">
-              <div className="mb-4 sm:mb-4 lg:mb-4">
-                <p className="text-green-600 text-md sm:text-3xl font-bold tracking-widest mb-3">
-                  FAQ&apos;s
+      {/* ============ FAQ SECTION ============ */}
+      <section className="bg-white px-4 sm:px-4 md:px-8 py-12 sm:py-12 md:py-16 lg:py-12 ">
+        <div className="max-w-7xl mx-auto">
+          <div
+            className="rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 mb-6 bg-white/90 backdrop-blur-lg md:mr-8 md:ml-8"
+            style={{
+              backgroundImage: "url('/images/bg12.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-20 items-start">
+              {/* Left: Title and CTA */}
+              <div className="flex flex-col justify-start">
+                <p className="text-green-500 text-md sm:text-xl font-bold tracking-widest mb-3 sm:mb-4">
+                  OUR FAQ&apos;s
                 </p>
-                <div className="flex justify-start mb-2">
-                  <div className="w-20 h-1 bg-green-400 rounded"></div>
-                </div>
 
-                <h2 className="text-3xl sm:text-3xl lg:text-3xl font-bold text-gray-900 leading-tight mb-2">
-                  Looking for answer?
+                <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
+                  Frequently Asked
+                  <br />
+                  Questions
                 </h2>
               </div>
 
-              <div className="space-y-1 sm:space-y-1">
+              {/* Right: FAQ Accordion */}
+              <div className="space-y-4 sm:space-y-5 md:space-y-5">
                 {faqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="border border-green-400 p-3 rounded-xl py-2 sm:py-3 transition-all duration-300"
+                    className="border-b border-gray-200 pb-4 sm:pb-5 md:pb-6 last:border-b-0 last:pb-0 group"
                   >
                     <button
                       onClick={() =>
@@ -122,40 +120,31 @@ const ContactPage: React.FC = () => {
                           setOpenIndex(openIndex === index ? null : index);
                         }
                       }}
-                      className="w-full flex items-center justify-between gap-3 text-start hover:text-indigo-600 transition-colors duration-200"
+                      className="w-full flex items-start justify-between gap-4 text-left transition-opacity duration-200 hover:opacity-70"
                       aria-expanded={openIndex === index}
                     >
-                      <h3 className="cursor-pointer  text-sm sm:text-md lg:text-lg font-semibold text-black flex-1">
+                      <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 leading-relaxed flex-1 pt-0.5">
                         {faq.question}
                       </h3>
 
-                      <svg
-                        width="25"
-                        height="25"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className={`shrink-0 text-black text-bold transition-transform duration-500 ${
+                      <FaPlus
+                        height={28}
+                        width={28}
+                        className={`shrink-0 text-gray-900 mt-2 bold transition-transform duration-500 ${
                           openIndex === index ? "rotate-180" : ""
                         }`}
-                        aria-hidden="true"
-                      >
-                        <path
-                          d="M5 7.5L10 12.5L15 7.5"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
+                      />
                     </button>
 
+                    {/* Answer */}
                     <div
                       className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                        openIndex === index ? "opacity-100" : "opacity-0 hidden"
+                        openIndex === index
+                          ? "max-h-96 mt-3 sm:mt-4"
+                          : "max-h-0"
                       }`}
                     >
-                      <p className="text-slate-700 text-sm sm:text-base lg:text-base leading-relaxed pt-3 sm:pt-3 pr-8">
+                      <p className="text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>
